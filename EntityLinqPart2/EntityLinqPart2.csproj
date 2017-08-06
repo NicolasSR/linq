@@ -80,6 +80,7 @@
     <Compile Include="Aula2\Exercicio1.cs" />
     <Compile Include="Aula3\Exercicio1.cs" />
     <Compile Include="Aula4\Exercicio1.cs" />
+    <Compile Include="Aula5\Exercicio1.cs" />
     <Compile Include="Data\Album.cs">
       <DependentUpon>AluraTunes].tt</DependentUpon>
     </Compile>
@@ -93,10 +94,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AluraTunes].tt</DependentUpon>
     </Compile>
-    <Compile Include="Data\AluraTunes].Designer.cs">
+    <Compile Include="Data\AluraTunes.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>AluraTunes].edmx</DependentUpon>
+      <DependentUpon>AluraTunes.edmx</DependentUpon>
     </Compile>
     <Compile Include="Data\Artista.cs">
       <DependentUpon>AluraTunes].tt</DependentUpon>
@@ -122,6 +123,9 @@
     <Compile Include="Data\Playlist.cs">
       <DependentUpon>AluraTunes].tt</DependentUpon>
     </Compile>
+    <Compile Include="Data\ps_Vendas_Por_Cliente_Result.cs">
+      <DependentUpon>AluraTunes].tt</DependentUpon>
+    </Compile>
     <Compile Include="Data\TipoMidia.cs">
       <DependentUpon>AluraTunes].tt</DependentUpon>
     </Compile>
@@ -130,33 +134,26 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <EntityDeploy Include="Data\AluraTunes].edmx">
+    <EntityDeploy Include="Data\AluraTunes.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>AluraTunes].Designer.cs</LastGenOutput>
+      <LastGenOutput>AluraTunes.Designer.cs</LastGenOutput>
     </EntityDeploy>
     <None Include="Data\AluraTunes].Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>AluraTunes].edmx</DependentUpon>
+      <DependentUpon>AluraTunes.edmx</DependentUpon>
       <LastGenOutput>AluraTunes].Context.cs</LastGenOutput>
     </None>
-    <None Include="Data\AluraTunes].edmx.diagram">
-      <DependentUpon>AluraTunes].edmx</DependentUpon>
+    <None Include="Data\AluraTunes.edmx.diagram">
+      <DependentUpon>AluraTunes.edmx</DependentUpon>
     </None>
     <None Include="Data\AluraTunes].tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>AluraTunes].edmx</DependentUpon>
+      <DependentUpon>AluraTunes.edmx</DependentUpon>
       <LastGenOutput>AluraTunes].cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AluraTunes.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="AluraTunes_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>AluraTunes.mdf</DependentUpon>
-    </Content>
     <Content Include="Data\AluraTunes.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

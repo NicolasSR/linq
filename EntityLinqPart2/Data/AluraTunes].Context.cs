@@ -12,6 +12,8 @@ namespace EntityLinqPart2.Data
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
+    using System.Data.Entity.Core.Objects;
+    using System.Linq;
     
     public partial class AluraTunesEntities1 : DbContext
     {
@@ -35,5 +37,14 @@ namespace EntityLinqPart2.Data
         public virtual DbSet<NotaFiscal> NotaFiscals { get; set; }
         public virtual DbSet<Playlist> Playlists { get; set; }
         public virtual DbSet<TipoMidia> TipoMidias { get; set; }
+    
+        public virtual ObjectResult<ps_Vendas_Por_Cliente_Result> ps_Vendas_Por_Cliente(Nullable<int> clienteId)
+        {
+            var clienteIdParameter = clienteId.HasValue ?
+                new ObjectParameter("clienteId", clienteId) :
+                new ObjectParameter("clienteId", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<ps_Vendas_Por_Cliente_Result>("ps_Vendas_Por_Cliente", clienteIdParameter);
+        }
     }
 }

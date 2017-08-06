@@ -18,7 +18,10 @@ namespace EntityLinqPart2
             //Aula3.Exercicio1.ConsultaImediataEAdiada();
 
             //AULA 4
-            Aula4.Exercicio1.GerarQRCode();
+            //Aula4.Exercicio1.GerarQRCode();
+
+            //AULA 5
+            Aula5.Exercicio1.AcessandoStoreProcedure();
 
             Console.ReadKey();
         }

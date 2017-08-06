@@ -12,8 +12,6 @@ C:\Users\Nicolas\Desktop\Projetos\EntityLinqPart2\EntityLinqPart2\bin\Debug\Enti
 C:\Users\Nicolas\Desktop\Projetos\EntityLinqPart2\EntityLinqPart2\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Nicolas\Desktop\Projetos\EntityLinqPart2\EntityLinqPart2\obj\Debug\EntityLinqPart2.exe
 C:\Users\Nicolas\Desktop\Projetos\EntityLinqPart2\EntityLinqPart2\obj\Debug\EntityLinqPart2.pdb
-C:\Users\nicol\Documents\Projetos\EntityLinqPart2\EntityLinqPart2\bin\Debug\AluraTunes.mdf
-C:\Users\nicol\Documents\Projetos\EntityLinqPart2\EntityLinqPart2\bin\Debug\AluraTunes_log.ldf
 C:\Users\nicol\Documents\Projetos\EntityLinqPart2\EntityLinqPart2\bin\Debug\Data\AluraTunes.mdf
 C:\Users\nicol\Documents\Projetos\EntityLinqPart2\EntityLinqPart2\bin\Debug\Data\AluraTunes_log.ldf
 C:\Users\nicol\Documents\Projetos\EntityLinqPart2\EntityLinqPart2\bin\Debug\EntityLinqPart2.exe.config
